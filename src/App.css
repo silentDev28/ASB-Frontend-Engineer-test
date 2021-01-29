@@ -1,38 +1,421 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "ProductSans";
+  src: url("./assets/fonts/ProductSans-Regular.ttf");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "ProductSans";
+  font-size: 18px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  outline: none !important;
 }
+.nav-bar {
+  background: #ffffff;
+  box-shadow: inset 0px -1px 0px rgba(220, 225, 231, 0.572143);
+  height: 52px;
+  width: 100%;
+  padding-top: 14px;
+  position: relative;
+}
+.MuiTypography-body1 {
+  position: absolute !important;
+  width: 118px !important;
+  height: 22px !important;
+  left: 58px !important;
+  top: 15px !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 22px !important;
+}
+.logo-span {
+  position: absolute;
+  top: 11.23px;
+  left: 26px;
+}
+.nav {
+  top: 15px !important;
+  position: absolute;
+  left: 225px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  top: 0% !important;
+}
+.nav-ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
+}
+.nav-li {
+  padding-left: 36px;
+  margin-right: 6px;
+  height: 52px;
+  padding-top: 15px;
+  padding-left: 14px;
+  padding-right: 15px;
+}
+.icon-nav {
+  margin-right: 9.2px;
+}
+.nav-li a {
+  font-size: 14px;
+  color: #778699;
+}
+.active-nav {
+  background: #deefff;
+  color: #006fd6;
+  font-weight: 700;
+  border-bottom: 4px solid #006fd6;
+}
+.search-div {
+  position: absolute;
+  left: 70%;
+  top: 8px;
+}
+.input-search {
+  border: 1px solid #dce1e7 !important;
+  border-radius: 4px !important;
+  height: 36px !important;
+}
+.search-icon {
+  color: #979797 !important;
+}
+.bell-logo {
+  left: 90.49% !important;
+  right: 8.41% !important;
+  top: 25.96% !important;
+  bottom: 32.23% !important;
+  position: absolute;
+}
+.icon-and-dropdown {
+  position: absolute;
+  left: 92.82%;
+  right: 3.68%;
+  top: 16.98%;
+}
+.person-icon-cover {
+  bottom: 15.09%;
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  background: #d8d8d8;
+  padding-top: 10% !important;
+  padding-bottom: 10.51% !important;
+  /* padding-left: 15.81% !important; */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+}
+.person-logo {
+  width: 15.49px !important;
+  height: 16.19px !important;
+}
+.PrivateSwitchBase-root-10 {
+  color: none !important;
+  background-color: none !important;
+}
+.path-logo {
+  position: absolute !important;
+  top: 46%;
+  left: 100%;
+}
+.home-cover {
+  background-color: FFFFFF;
+}
+.nav-route {
+  padding-left: 33px;
+  padding-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #778699;
+  margin-bottom: 16px;
+}
+.left-cover {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.card-div {
+  margin-left: 26px;
+  padding-left: 16px !important;
+  margin-bottom: 24px;
+}
+.card-icon {
+  position: absolute;
+  left: calc(100% - 16%);
+}
+.side-cont {
+  margin-right: 26px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-bottom: 24px !important;
+}
+.address-and-table-card {
+  padding-left: 26px;
+}
+.address-card {
+  width: 19.97% !important;
+  border-radius: 0px !important;
+  height: 100%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.table-header {
+  background: #f3f6f9;
+  color: #899198;
+  font-weight: 500;
+}
+.MuiStepIcon-text {
+  display: none !important;
+}
+.MuiStepIcon-active {
+  color: #707070 !important;
+  width: 9px !important;
+  height: 9px !important;
+
+  /* position: absolute; */
+}
+.Mui-disabled {
+  padding-top: 0px !important;
+}
+.MuiStepIcon-root {
+  color: #707070 !important;
+  width: 9px !important;
+  height: 9px !important;
+  margin-top: -15px !important;
+}
+.MuiStepConnector-lineVertical {
+  margin-left: -2.5% !important;
+  margin-top: -32px !important;
+  height: 50px;
+  position: absolute;
+}
+.MuiTableCell-head {
+  color: #899198 !important;
+  font-size: 12px !important;
+  font-weight: 500px !important;
+}
+.vector-logo {
+  width: 31px;
+  height: 31px;
+  background-color: #006fd6;
+  border-radius: 6.3px;
+  margin-left: 12px !important;
+  margin-top: 12px !important;
+}
+.card-content-cover {
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #19191d;
+  margin-bottom: 17px !important;
+}
+.vector-logo-cover {
+  padding-left: 12px;
+  margin-bottom: 21.6px;
+}
+.division-div {
+  margin-top: 17px;
+}
+.ul-address {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 10px !important;
+}
+.address-cover {
+  padding-left: 14.6px;
+  padding-bottom: 33px;
+}
+.list-icon-span {
+  margin-bottom: 17.6px !important;
+  margin-right: 16.6px;
+}
+.division-div {
+  font-size: 14px;
+  font-weight: 700px;
+  color: black;
+}
+.card-p {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #9696a0;
+}
+.stepper-p {
+  margin-top: 10px;
+  color: #a1aace;
+}
+.stepper-span {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.stepper-cont {
+  padding: 0px;
+  font-size: 12px;
+  font-weight: 700px;
+  color: #747474;
+}
+.mat-total {
+  position: absolute;
+}
+.card-cover {
+  padding-right: 28px;
+}
+.card-div {
+  width: 18.4% !important;
+}
+.no-issues {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  border-radius: 11px !important;
+  box-shadow: none !important;
+  background-color: #fff6de !important;
+  width: 120px;
+  height: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #f4b400;
+}
+.issues {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  border-radius: 11px !important;
+  box-shadow: none !important;
+  background-color: #f6f3ff !important;
+  width: 120px;
+  height: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #8c70ff;
+}
+.module-history-card {
+  box-shadow: none !important;
+}
+@media (max-width: 1050px) {
+  .address-card {
+    width: 39.97% !important;
+    border-radius: 0px !important;
+    height: 100%;
+  }
+  .table-cont {
+    width: 20.97% !important;
+    border-radius: 0px !important;
+    height: 100%;
+  }
+  nav {
+    display: block !important;
+  }
+  .search-div {
+    left: 58% !important;
+  }
+  .bell-logo {
+    left: 85% !important;
+  }
+  .icon-and-dropdown {
+    left: 90% !important;
+  }
+}
+@media (max-width: 982px) {
+  .address-card {
+    width: 39.97% !important;
+    border-radius: 0px !important;
+    height: 100%;
+  }
+  .table-cont {
+    width: 20.97% !important;
+    border-radius: 0px !important;
+    height: 100%;
+  }
+  .card-icon {
+    display: none !important;
+  }
+  nav {
+    display: none !important;
+  }
+  .search-div {
+    left: 42% !important;
+  }
+  .bell-logo {
+    left: 85% !important;
+  }
+  .icon-and-dropdown {
+    left: 90% !important;
+  }
+}
+@media (max-width: 770px) {
+  .address-card {
+    width: 39.97% !important;
+    border-radius: 0px !important;
+    height: 100%;
+  }
+  .card-icon {
+    display: block !important;
+  }
+  .table-cont {
+    width: 20.97% !important;
+    border-radius: 0px !important;
+    height: 100%;
+  }
+  nav {
+    display: none !important;
+  }
+  .search-div {
+    left: 42% !important;
+  }
+  .bell-logo {
+    left: 85% !important;
+  }
+  .icon-and-dropdown {
+    left: 90% !important;
+  }
+  .card-cover {
+    padding-right: 54px !important;
+  }
+}
+@media (max-width: 550px) {
+  .address-card {
+    width: 100% !important;
+    border-radius: 0px !important;
+    height: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+  .table-cont {
+    width: 100% !important;
+    border-radius: 0px !important;
+    height: 100%;
+    padding-right: 28px !important;
+  }
+  nav {
+    display: none !important;
+  }
+  .search-div {
+    display: none;
+  }
+  .bell-logo {
+    display: none;
+  }
+  .icon-and-dropdown {
+    display: none;
+  }
+  .card-cover {
+    padding-right: 54px !important;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* @media (max-width: 1000px) {
+  .address-card {
+    padding-left: 0px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .side-cont {
+    margin-right: 26px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-bottom: 24px !important;
   }
-}
+} */
+/* .brand-name {
+  line-height: 22px !important;
+} */
